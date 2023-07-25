@@ -1,0 +1,85 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	color: white;
+}
+body {
+	background-image: url("https://res.cloudinary.com/dnmaskg3n/image/upload/v1690106708/background_kugnbd.png");
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding: 15px;
+}
+@media screen and (min-width: 768px) {
+	.container {
+		display: flex;
+	}
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	min-height: 70vh;
+}
+.content1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+	h2 {
+		font-size: 45px;
+	}
+}
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15px;
+}
+.flex div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+}
+.flex div h1 {
+	font-size: 18px;
+	font-weight: bolder;
+}
+.flex div p {
+	font-size: 22px;
+	font-weight: bolder;
+}
+.rocket {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	display: none;
+}
+
+@keyframes lg-rocket {
+	0% {
+		bottom: 0;
+		opacity: 0;
+	}
+	100% {
+		bottom: 100%;
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.rocket {
+		display: block;
+		animation: lg-rocket 4s linear infinite;
+	}
+}
