@@ -6,7 +6,7 @@ let Minutes = document.getElementById("minutes");
 
 let Seconds = document.getElementById("seconds");
 
-let x = setInterval(() => {
+let intervalTime = setInterval(() => {
 	let shurtDownTime = new Date("Aug 25 , 2023 23:59:00").getTime();
 	let currentTime = new Date().getTime();
 	let distance = shurtDownTime - currentTime;
@@ -23,7 +23,7 @@ let x = setInterval(() => {
 	Seconds.textContent = seconds;
 
 	if (distance < 0) {
-		clearInterval(x);
+		clearInterval(intervalTime);
 		Days.textContent = "00";
 		Hours.textContent = "00";
 		Minutes.textContent = "00";
